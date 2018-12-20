@@ -199,5 +199,18 @@ namespace AimForAmazon
 				Console.WriteLine("No duplicates found!");
 			Console.WriteLine();
 		}
+
+		public void DuplicateRemover(int[] arr)
+		{
+			// HashSet Automatically removes duplicates
+			var list = new HashSet<int>(arr);
+			var i = 0;
+			var arr2 = new int[list.Count];
+			foreach (var item in list)
+			{
+				arr2[i++] = item;
+			}
+			ArrayPrinter(arr2);
+		}
 	}
 }

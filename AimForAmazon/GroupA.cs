@@ -15,9 +15,10 @@ namespace AimForAmazon
 			//Question2(arr1);
 			//Question3(arr1);
 			//Question4(arr1);
-			Question5(arr1);
-			Question5(arr2);
-			Question5(arr3);
+			//Question5(arr1);
+			Question6(arr1);
+			Question6(arr2);
+			Question6(arr3);
 		}
 		#region Quesiton1
 		// 1. How do you find the missing number in a given integer array of 1 to 100? (solution)
@@ -88,5 +89,14 @@ namespace AimForAmazon
 		}
 		#endregion Quesiton5
 
+		#region Quesiton6
+		// 6. How are duplicates removed from a given array? (solution)
+		void Question6(int[] arr)
+		{
+			var h = new HelperFunctions();
+			h.ArrayPrinter(arr);
+			h.DuplicateRemover(arr);
+		}
+		#endregion Quesiton6
 	}
 }
