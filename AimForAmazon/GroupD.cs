@@ -28,24 +28,24 @@ namespace AimForAmazon
 		{
 			var h = new HelperFunctions();
 			Console.WriteLine("Shouldnt intersect");
-			var rectangleOneCoordinates = h.GetRectangleCoordinates(2, 2, -2, -2);
+			var rectangleOneCoordinates = h.GetRectangleCoordinates(-2, -2, 2, 2);
 			var rectangleTwoCoordinates = h.GetRectangleCoordinates(3, 3, 6, 6);
 			h.IntersectionChecker(rectangleOneCoordinates, rectangleTwoCoordinates);
-			Console.WriteLine("Should intersect");
-			rectangleOneCoordinates = h.GetRectangleCoordinates(3, 3, -2, -2);
-			rectangleTwoCoordinates = h.GetRectangleCoordinates(3, 3, 6, 6);
-			h.IntersectionChecker(rectangleOneCoordinates, rectangleTwoCoordinates);
-			Console.WriteLine("Should intersect");
+			// Test code
+			//Console.WriteLine("Should intersect");
+			//rectangleOneCoordinates = h.GetRectangleCoordinates(-1, -1, -2, -2);
+			//rectangleTwoCoordinates = h.GetRectangleCoordinates(-3, -3, 6, 6);
+			//h.IntersectionChecker(rectangleOneCoordinates, rectangleTwoCoordinates);
 
-			rectangleOneCoordinates = h.GetRectangleCoordinates(2, 2, 4, 4);
-			rectangleTwoCoordinates = h.GetRectangleCoordinates(3, 3, 6, 6);
-			h.IntersectionChecker(rectangleOneCoordinates, rectangleTwoCoordinates);
-			Console.WriteLine("Should intersect");
+			//Console.WriteLine("Shouldnt intersect");
+			//rectangleOneCoordinates = h.GetRectangleCoordinates(1, 1, 2, 2);
+			//rectangleTwoCoordinates = h.GetRectangleCoordinates(3, 3, 6, 6);
+			//h.IntersectionChecker(rectangleOneCoordinates, rectangleTwoCoordinates);
 
-			rectangleOneCoordinates = h.GetRectangleCoordinates(2, 2, -2, -2);
-			rectangleTwoCoordinates = h.GetRectangleCoordinates(3, 3, 0, 0);
-			h.IntersectionChecker(rectangleOneCoordinates, rectangleTwoCoordinates);
-
+			//Console.WriteLine("Should intersect");
+			//rectangleOneCoordinates = h.GetRectangleCoordinates(2, 2, -2, -2);
+			//rectangleTwoCoordinates = h.GetRectangleCoordinates(1, 1, 0, 0);
+			//h.IntersectionChecker(rectangleOneCoordinates, rectangleTwoCoordinates);
 		}
 	}
 }
