@@ -212,5 +212,59 @@ namespace AimForAmazon
 			}
 			ArrayPrinter(arr2);
 		}
+
+		public void IntersectionChecker(List<Tuple<int, int>> rectangleOneCoordinates, List<Tuple<int, int>> rectangleTwoCoordinates)
+		{
+			int rect1HighestXValue = rectangleOneCoordinates[0].Item1;
+			int rect1lowestXValue = rectangleOneCoordinates[0].Item1;
+			int rect1HighestYValue = rectangleOneCoordinates[0].Item2;
+			int rect1lowestYValue = rectangleOneCoordinates[0].Item2;
+			foreach (var item in rectangleOneCoordinates)
+			{
+				if (item.Item1 >= rect1HighestXValue)
+					rect1HighestXValue = item.Item1;
+				else
+					rect1lowestXValue = item.Item1;
+				if (item.Item2 >= rect1HighestYValue)
+					rect1HighestYValue = item.Item2;
+				else
+					rect1lowestYValue = item.Item2;
+			}
+
+			int rect2HighestXValue = rectangleTwoCoordinates[0].Item1;
+			int rect2LowestXValue = rectangleTwoCoordinates[0].Item1;
+			int rect2HighestYValue = rectangleTwoCoordinates[0].Item2;
+			int rect2LowestYValue = rectangleTwoCoordinates[0].Item2;
+			foreach (var item in rectangleTwoCoordinates)
+			{
+				if (item.Item1 >= rect2HighestXValue)
+					rect2HighestXValue = item.Item1;
+				else
+					rect2LowestXValue = item.Item1;
+				if (item.Item2 >= rect2HighestYValue)
+					rect2HighestYValue = item.Item2;
+				else
+					rect2LowestYValue = item.Item2;
+			}
+
+			if ((rect2HighestXValue <= rect1HighestXValue && rect2HighestXValue >= rect1lowestXValue)
+			    && (rect2HighestYValue <= rect1HighestYValue && rect2HighestYValue >= rect1lowestYValue))
+				Console.WriteLine("Intersecting Rectangles");
+			else if ((rect1HighestXValue <= rect2HighestXValue && rect1HighestXValue >= rect2LowestXValue)
+			    && (rect1HighestYValue <= rect2HighestYValue && rect1HighestYValue >= rect2LowestYValue))
+				Console.WriteLine("Intersecting Rectangles");
+			else
+				Console.WriteLine("Non intersecting rectangles");
+		}
+
+		public List<Tuple<int, int>> GetRectangleCoordinates(int X1, int Y1, int X3, int Y3)
+		{
+			var rectangleOneCoordinates = new List<Tuple<int, int>>();
+			rectangleOneCoordinates.Add(new Tuple<int, int>(X1, Y1));
+			rectangleOneCoordinates.Add(new Tuple<int, int>(X1, Y3));
+			rectangleOneCoordinates.Add(new Tuple<int, int>(X3, Y1));
+			rectangleOneCoordinates.Add(new Tuple<int, int>(X3, Y3));
+			return rectangleOneCoordinates;
+		}
 	}
 }

@@ -6,8 +6,8 @@ namespace AimForAmazon
 	{
 		public static void Main(string[] args)
 		{
-			var present = new GroupA();
-			//new GroupA();
+			//var present = new GroupA();
+			new GroupD();
 		}
 	}
 }

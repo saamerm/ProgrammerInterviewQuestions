@@ -16,9 +16,10 @@ namespace AimForAmazon
 			//Question3(arr1);
 			//Question4(arr1);
 			//Question5(arr1);
-			Question6(arr1);
-			Question6(arr2);
-			Question6(arr3);
+			//Question6(arr1);
+			Question7(arr1);
+			Question7(arr2);
+			Question7(arr3);
 		}
 		#region Quesiton1
 		// 1. How do you find the missing number in a given integer array of 1 to 100? (solution)
@@ -98,5 +99,45 @@ namespace AimForAmazon
 			h.DuplicateRemover(arr);
 		}
 		#endregion Quesiton6
+
+		#region Quesiton7
+		// 7. How is an integer array sorted in place using the quicksort algorithm? (solution)
+		void Question7(int[] arr)
+		{
+			var h = new HelperFunctions();
+			h.ArrayPrinter(arr);
+			// TODO: Solution link C# https://www.w3resource.com/csharp-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-9.php
+		}
+		#endregion Quesiton7
+
+		#region Quesiton8
+		// 8. How do you remove duplicates from an array in place? (solution)
+		void Question8(int[] arr)
+		{
+			var h = new HelperFunctions();
+			h.ArrayPrinter(arr);
+			// TODO: 
+		}
+		#endregion Quesiton8
+
+		#region Quesiton9
+		// 9. How do you reverse an array in place in Java? (solution)
+		void Question9(int[] arr)
+		{
+			var h = new HelperFunctions();
+			h.ArrayPrinter(arr);
+			// TODO: 
+		}
+		#endregion Quesiton9
+
+		#region Quesiton10
+		// 10. How are duplicates removed from an array without using any library? (solution)
+		void Question10(int[] arr)
+		{
+			var h = new HelperFunctions();
+			h.ArrayPrinter(arr);
+			// TODO: 
+		}
+		#endregion Quesiton10
 	}
 }

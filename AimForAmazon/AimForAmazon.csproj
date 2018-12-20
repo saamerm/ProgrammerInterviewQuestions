@@ -37,6 +37,7 @@
     <Compile Include="GroupA.cs" />
     <Compile Include="HelperFunctions.cs" />
     <Compile Include="StaticHelperFunctions.cs" />
+    <Compile Include="GroupD.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Instructions.txt" />
