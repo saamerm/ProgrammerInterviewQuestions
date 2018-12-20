@@ -133,5 +133,71 @@ namespace AimForAmazon
 			Console.WriteLine("The smallest number is " + smallest);
 
 		}
+
+		public void SumEqualsGivenNumberPairFinder(int givenNumber, int[] arr)
+		{
+			var matchingPairs = 0;
+			var list = new List<Tuple<int, int>>();
+			// Calculation
+			for (var i = 0; i < arr.Length; i++)
+			{
+				for (var j = i; j < arr.Length; j++)
+				{
+					// Only consider cases where i & j are different indices
+					if (i != j)
+					{
+						if (arr[i] + arr[j] == givenNumber)
+						{
+							list.Add(new Tuple<int, int>(arr[i], arr[j]));
+							matchingPairs++;
+						}
+					}
+				}
+			}
+
+			// Conclusion
+			if (matchingPairs > 0)
+			{
+				Console.WriteLine("Here's the matching pairs: ");
+				foreach (var tuple in list)
+				{
+					Console.WriteLine(tuple.Item1 + " & " + tuple.Item2 + " ");
+				}
+			}
+			else
+				Console.WriteLine("No Matching Pairs");
+		}
+
+		public void DuplicateDetailsFinder(int[] arr)
+		{
+			var duplicatesCount = 0;
+			// Find number of duplicates as well
+			var list = new Dictionary<int, int>();
+
+			// Investigation
+			for (var i = 0; i < arr.Length - 1; i++)
+			{
+				if (arr[i] == arr[i + 1])
+				{
+					duplicatesCount++;
+					// Remove this line, if you dont want to show unique duplicates
+					if (!list.ContainsKey(arr[i]))
+						list.Add(arr[i], 2);
+					else
+						list[arr[i]]++;
+				}
+			}
+
+			// Conclusion
+			if (duplicatesCount > 0)
+			{
+				Console.Write("There were " + duplicatesCount + " duplicates:");
+				foreach (var item in list)
+					Console.Write(" " + item.Key + "-" + item.Value + "time(s) ");
+			}
+			else
+				Console.WriteLine("No duplicates found!");
+			Console.WriteLine();
+		}
 	}
 }
