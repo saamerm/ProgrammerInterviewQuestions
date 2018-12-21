@@ -53,6 +53,7 @@ namespace AimForAmazon
 				Console.WriteLine("No missing numbers found");
 		}
 
+
 		public void ArrayAscendingSorter(int[] arr)
 		{
 			for (var j = 0; j < arr.Length - 1; j++)
@@ -266,5 +267,17 @@ namespace AimForAmazon
 			rectangleOneCoordinates.Add(new Tuple<int, int>(X3, Y3));
 			return rectangleOneCoordinates;
 		}
+
+		#region Group C
+		public void FancyStringPrinter(List<char> list)
+		{
+			Console.Write("{ ");
+			foreach (var c in list)
+			{
+				Console.Write(c + " ");
+			}
+			Console.WriteLine("}");
+		}
+		#endregion Group C
 	}
 }

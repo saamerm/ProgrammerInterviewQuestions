@@ -24,20 +24,20 @@ How do you find the length of a singly linked list? (solution)
 How do you find the third node from the end in a singly linked list? (solution)
 How do you find the sum of two linked lists using Stack? (solution)
 
-Here is my list of frequently asked string coding questions from programming job interviews:
+C. Here is my list of frequently asked string coding questions from programming job interviews:
 
-How do you print duplicate characters from a string? (solution)
-How do you check if two strings are anagrams of each other? (solution)
-How do you print the first non-repeated character from a string? (solution)
-How can a given string be reversed using recursion? (solution)
-How do you check if a string contains only digits? (solution)
-How are duplicate characters found in a string? (solution)
-How do you count a number of vowels and consonants in a given string? (solution)
-How do you count the occurrence of a given character in a string? (solution)
-How do you find all permutations of a string? (solution)
-How do you reverse words in a given sentence without using any library method? (solution)
-How do you check if two strings are a rotation of each other? (solution)
-How do you check if a given string is a palindrome? (solution)
+1. How do you print duplicate characters from a string? (solution)
+2. How do you check if two strings are anagrams of each other? (solution)
+3. How do you print the first non-repeated character from a string? (solution)
+4. How can a given string be reversed using recursion? (solution)
+5. How do you check if a string contains only digits? (solution)
+6. How are duplicate characters found in a string? (solution)
+7. How do you count a number of vowels and consonants in a given string? (solution)
+8. How do you count the occurrence of a given character in a string? (solution)
+9. How do you find all permutations of a string? (solution)
+10. How do you reverse words in a given sentence without using any library method? (solution)
+11. How do you check if two strings are a rotation of each other? (solution)
+12. How do you check if a given string is a palindrome? (solution)
 
 Here is a list of popular binary tree-based coding questions from software engineer or developer job interviews:
 
