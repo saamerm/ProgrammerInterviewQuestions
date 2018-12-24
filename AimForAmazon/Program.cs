@@ -7,7 +7,7 @@ namespace AimForAmazon
 		public static void Main(string[] args)
 		{
 			//var present = new GroupA();
-			new GroupC();
+			new LeetCode.Easy();
 			//new GroupD();
 		}
 	}

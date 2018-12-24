@@ -34,14 +34,19 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GroupA.cs" />
     <Compile Include="HelperFunctions.cs" />
     <Compile Include="StaticHelperFunctions.cs" />
-    <Compile Include="GroupE.cs" />
-    <Compile Include="GroupC.cs" />
+    <Compile Include="SimpleProgrammer\GroupA.cs" />
+    <Compile Include="SimpleProgrammer\GroupC.cs" />
+    <Compile Include="SimpleProgrammer\GroupE.cs" />
+    <Compile Include="LeetCode\Easy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Instructions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SimpleProgrammer\" />
+    <Folder Include="LeetCode\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
