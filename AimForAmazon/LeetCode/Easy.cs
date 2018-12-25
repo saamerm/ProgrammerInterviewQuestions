@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
 namespace AimForAmazon.LeetCode
 {
 	public class Easy
@@ -35,6 +38,20 @@ namespace AimForAmazon.LeetCode
 				}
 			}
 			return new int[0];
+		}
+		public int[] twoSum(int[] nums, int target)
+		{
+			var map = new Dictionary<int, int>();
+			for (int i = 0; i < nums.Length; i++)
+			{
+				int complement = target - nums[i];
+				//if (map.ContainsKey(complement))
+				//{
+				//	return new int[] { map.get(complement), i };
+				//}
+				//map.put(nums[i], i);
+			}
+			throw new Exception("No two sum solution");
 		}
 	}
 }
