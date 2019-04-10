@@ -13,7 +13,7 @@ A. Here are some of the popular array-based coding interview questions for your 
 9. How do you reverse an array in place in Java? (solution)
 10. How are duplicates removed from an array without using any library? (solution)
 
-Here are some of the most common and popular linked list interview questions and their solutions:
+B. Here are some of the most common and popular linked list interview questions and their solutions:
 
 How do you find the middle element of a singly linked list in one pass? (solution)
 How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle? (solution)
