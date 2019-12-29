@@ -10,7 +10,7 @@ namespace HackerRank
             // Uncomment the line below to run the solution for Problem 1
             //x.Problem1();
             var y = new DataStructures();
-            y.Question2();
+            y.Problem3();
         }
     }
 }

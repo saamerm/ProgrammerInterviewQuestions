@@ -10,6 +10,7 @@ namespace HackerRank
         {
         }
 
+        #region Problem1
         public void Problem1()
         {
             var arr = Create2DArray();
@@ -23,7 +24,7 @@ namespace HackerRank
             int primarySum = 0;
             int primarySumCounter = 0;
             int secondarySum = 0;
-            int secondarySumCounter = arr.Count-1;
+            int secondarySumCounter = arr.Count - 1;
 
             foreach (var list in arr)
             {
@@ -49,5 +50,7 @@ namespace HackerRank
             x.Add(new List<int>(arr3));
             return x;
         }
+
+        #endregion
     }
 }
