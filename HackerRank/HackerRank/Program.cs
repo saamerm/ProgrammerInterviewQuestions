@@ -6,7 +6,8 @@ namespace HackerRank
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var x = new Algorithms();
+            x.Problem1();
         }
     }
 }
