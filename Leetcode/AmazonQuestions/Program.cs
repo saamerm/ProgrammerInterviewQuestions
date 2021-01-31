@@ -6,8 +6,9 @@ namespace AmazonQuestions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            var x = new Question1();
+            Console.WriteLine("Welcome!");
+            // var x = new Question1();
+            var x = new Question2();
         }
     }
 }
